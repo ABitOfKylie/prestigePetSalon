@@ -44,35 +44,41 @@ body{
 	font-family: 'Merriweather', serif;
 }
 
-nav.navbar-inverse{
+nav.navbar{
 	background:rgba(255, 105, 180, 0.5)
 /*	font-family:'Lovers Quarrel', cursive;
-	font-weight:800;*/
+*//*	font-weight:800;*/
+/*	border:none;*/
 }
 
+.nav navbar-nav .navbar-right > li > a {
+   color: #FF66C1;
+}
 .testimonial{
 	background: #222;
 }
 
+/*#quoteGroup{
+	margin-top:20px;
+}*/
+
 blockquote{
 	border:none;
 	margin: 0;
-	font-family: Georgia, Times, serif;
-	font-style: italic;
-	font-size: 32px;
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	font-weight:400;
 	color:#FF66C1;
 }
 
 blockquote cite{
 	display: block;
-	text-align: right;
-	text-transform: uppercase;
-	font-family: Helvetica, Arial, sans-serif;
-	font-style:normal;
-	font-size: 18px;
-	font-weight: bold;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
 	color: #ffb6c1;
-	margin-top: 40px;
+	font-weight:400;
+	margin-top: 10px;
 }
 
 section{
