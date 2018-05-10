@@ -44,16 +44,27 @@ body{
 	font-family: 'Merriweather', serif;
 }
 
-nav.navbar{
+nav.navbar-inverse{
+	background:rgba(255, 105, 180, 0.5);
+	color:white;
+}
+nav.navbar {
 	background:rgba(255, 105, 180, 0.5)
-/*	font-family:'Lovers Quarrel', cursive;
-*//*	font-weight:800;*/
-/*	border:none;*/
+	font-family:'Lovers Quarrel', cursive;
+	font-weight:800;
+	color:white !important;
+	hover:black !important;
+	border:none;
 }
 
 .nav navbar-nav .navbar-right > li > a {
-   color: #FF66C1;
+   color: rgb(254,254,250) !important;
 }
+
+.nav navbar-nav .navbar-right > li > a:hover {
+   color: #FF66C1 !important; 
+}
+
 .testimonial{
 	background: #222;
 }
