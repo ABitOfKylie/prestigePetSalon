@@ -3,7 +3,7 @@ font-family: 'Italianno', cursive;
 font-family: 'Pacifico', cursive;
 font-family: 'Merriweather', serif;*/
 
-
+/* This is just a comment to mark a spot - will be removed */
 html,
 body,
 .cover {
@@ -13,6 +13,23 @@ body,
 
 body{
 	position:relative;
+}
+
+section{
+	padding:80px;
+}
+
+h2{
+	text-align: center;
+	font-size:28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 60px;
+}
+
+h2 + p {
+	text-align: center;
+	margin-top: -60px;
 }
 .cover{
 	background: url("images/pinkBlackSalon.jpg") top left no-repeat;
@@ -33,45 +50,52 @@ body{
 
 .cover-text h1{
 	font-family:"Pacifico", cursive;
-	margin-top:30px;
+	margin-top:60px;
 	font-size:70px;
 	letter-spacing: -3px;
 }
 
-.cover-text p {
+.cover-text h2{
+	margin-top:24px;
+	font-size:20px;
+	text-transform: capitalize;
+}
+
+.cover-text h2 + p + lead{
 	margin-top:10px;
 	font-weight:600;
+	color: purple;
 	font-family: 'Merriweather', serif;
+}
+
+.cover-text btn btn-default btn-lg{
+	background:purple;
 }
 
 nav.navbar-inverse{
 	background:rgba(255, 105, 180, 0.5);
-	color:white;
-}
-nav.navbar {
-	background:rgba(255, 105, 180, 0.5)
-	font-family:'Lovers Quarrel', cursive;
-	font-weight:800;
-	color:white !important;
-	hover:black !important;
 	border:none;
+	font-family: "Merriweather", serif;
+	font-weight:800;
 }
 
-.nav navbar-nav .navbar-right > li > a {
-   color: rgb(254,254,250) !important;
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
 }
 
-.nav navbar-nav .navbar-right > li > a:hover {
-   color: #FF66C1 !important; 
+.navbar-inverse .navbar-brand {
+	font-family:'Pacifico', cursive;
+	font-weight:100;
+	font-size:23px;
+	color:black!important;
+	border:none;
+  color: black;
 }
+
 
 .testimonial{
 	background: #222;
 }
-
-/*#quoteGroup{
-	margin-top:20px;
-}*/
 
 blockquote{
 	border:none;
@@ -90,23 +114,6 @@ blockquote cite{
 	color: #ffb6c1;
 	font-weight:400;
 	margin-top: 10px;
-}
-
-section{
-	padding:80px;
-}
-
-h2{
-	text-align: center;
-	font-size:28px;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 0 0 60px;
-}
-
-h2 + p {
-	text-align: center;
-	margin-top: -60px;
 }
 
 #why-us{
@@ -161,12 +168,10 @@ footer a{
 	color:#ff1493;
 }
 
-
 img {
 	max-height: 300px;
 	max-width: 400px;
 }
-
 
 .blog{
  margin: 4em 0;
