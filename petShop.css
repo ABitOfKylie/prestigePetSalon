@@ -153,10 +153,22 @@ blockquote cite{
 	float:right;	
 }
 
-form{
+/*form{
 	float:right;
-}
+}*/
 
+#buttonContact {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 footer{
 	background: #ffc0cb;
 	text-align: center;
@@ -201,7 +213,8 @@ img {
 .card-img-top {
     height: 25rem;
     object-fit: cover;
-
+    width:100%;
+}
 .card{
 	margin-bottom:3rem;
 }
@@ -211,7 +224,6 @@ img {
    box-shadow:         inset 0 0 10px #000000;
 }
 
-}
 /* Media Queries */
 
 @media only screen and ( max-width : 568px ) {
