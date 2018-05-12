@@ -31,6 +31,9 @@ h2 + p {
 	text-align: center;
 	margin-top: -60px;
 }
+
+/*-------- Cover/Overlay ----------*/
+
 .cover{
 	background: url("images/pinkBlackSalon.jpg") top left no-repeat;
 	background-size: cover;
@@ -51,46 +54,116 @@ h2 + p {
 
 .cover-text h1{
 	font-family:"Pacifico", cursive;
-	margin-top:60px;
+	margin-top:80px;
 	font-size:70px;
 	letter-spacing: -3px;
+
 }
 
-.cover-text h2{
-	margin-top:24px;
-	font-size:20px;
-	text-transform: capitalize;
+.headerbg{
+	background-color:rgba(255, 250, 250, 1);
+	border-radius:10px;
+}
+#overlay {
+    position: absolute;
+    width: 30%;
+/*    height: 70%;*/
+    border-radius:50%;
+    top: 6rem;
+    left: 20rem;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 250, 250, 1);
+    z-index: 2;
+    cursor: pointer;
 }
 
-.cover-text h2 + p + lead{
-	margin-top:10px;
-	font-weight:600;
-	color: purple;
-	font-family: 'Merriweather', serif;
+#overlaytext{
+    position: absolute;
+    font-size: 30px;    
+		font-family: 'Merriweather', serif;
+		letter-spacing: -3px;
+    text-align:center;
+    color: slategray;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 
 #makeCut{
-	color: white;
-	font-family: 'Merriweather', serif;
+	color: black;
+  font-family:"Italianno", cursive;
+	font-size: 1.75rem;
+/*	position:absolute;
+	bottom:10%;
+	left:20%;*/
+}
+
+#coverButton{
+	background:#FF1493;
+	color:white;
 	position:absolute;
+	bottom:75px;
+	right:35px;
+}
+
+/*-------------- Testing Area Resp. Circle --------------*/
+.circle {
+  display: flex;
+  min-width: 15%;
+  /* to allow placement of numbers on top of circles instead of below them */
+  white-space: nowrap;
+
+}
+
+.circle:before {
+  border-radius: 50%;
+  /* = 15%, almost gives us viewport width unit (15vw) */
+  width: 100%;
+  /*padding-bottom: 100%;
+*/  /* this way we should have 1px gap between circles */
+  margin: 15px .5px;
+  background-color: rgba(255, 250, 250, 1);
+  z-index: 2;
+  content: '';
+/*  display: inline-block;
+  circle to the middle, so that... [1] 
+  vertical-align: middle;*/
+  
+  /* to use viewport based units we can safely override the old units in this way */
+  padding-bottom: 0vw;
+  width: 15vw;
+  height: 15vw;
+
+  position:absolute;
 	bottom:10%;
 	left:20%;
 }
-#coverButton{
-	background:black;
-	color:white;
-	position:absolute;
-	bottom:20px;
-	right:25px;
-}
 
-.testing{
-	position: : calc(100%-50px);
+.circle p {
+  display: flex;
+  font-size: 16pt;
+  color:red;
+  font-weight:800;
+/*  font-family: 'Italianno', cursive;
+*/text-align: center
+ /*  -.5em = white space between p elements... 
+  margin: 0 -.5em 0 -100%;*/
+  padding: 0;
+  /* ... text can be middle too! [1] */
+  vertical-align: middle;
+  white-space: normal;
+  width: 100%;
+  /* for some reason that I can't figure out right now...
+    viewport units eliminate the white space issue */
+  margin: 0 0 0 -15vw;
+  width: 15vw;
+  position:absolute;
+	bottom:10%;
+	left:20%;
 }
+/* end testing area for responsive circle enclosing text*/
 
-#coverButton{
-	position:calc(100%-50px) calc(100%-20px);
-}
+/* -------- Navigation Bar*----------*/
 nav.navbar-inverse{
 	background:rgba(255, 105, 180, 0.5);
 	border:none;
@@ -111,6 +184,7 @@ nav.navbar-inverse{
   color: black;
 }
 
+/* -------- Testimonial Section*----------*/
 
 .testimonial{
 	background: #222;
@@ -135,6 +209,8 @@ blockquote cite{
 	margin-top: 10px;
 }
 
+/* -------- Why Us Section*----------*/
+
 #why-us{
 	background: url("images/pinkBubbleBackground.jpg") top left no-repeat;
 	background-size:cover;
@@ -147,6 +223,39 @@ blockquote cite{
 	font-weight:800;
 	color:black;
 }
+
+/* -------- Card Gallery Section*----------*/
+
+#gallery{
+	background:black;
+}
+.album{
+	background-color:#F2DEE3;
+}
+img {
+	max-height: 300px;
+	max-width: 400px;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.card-img-top {
+    height: 25rem;
+    object-fit: cover;
+    width:100%;
+}
+.card{
+	margin-bottom:3rem;
+	max-height: 500px;
+}
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+/* -------- Team Section*----------*/
+
 #team{
 /*	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBwvYYBqTO6AzJCDNC4jDwYZ62B7Y1tDOjC4d5YUP8ZxoZd90zig") top left no-repeat;
 	background-size:cover;
@@ -158,6 +267,8 @@ blockquote cite{
 #team.container{
 	opacity: 1.0;
 }
+
+/* -------- Join Us Section*----------*/
 
 #signup{
 	background: url("images/pinkScarf.jpg") top left no-repeat;
@@ -188,6 +299,7 @@ blockquote cite{
     margin: 4px 2px;
     cursor: pointer;
 }
+
 footer{
 	background: #ffc0cb;
 	text-align: center;
@@ -199,49 +311,8 @@ footer a{
 	color:#ff1493;
 }
 
-img {
-	max-height: 300px;
-	max-width: 400px;
-}
 
-.blog{
- margin: 4em 0;
- position: relative; 
-}
-.blog h1{
- color:#F97300;
- margin: 2em; 
-}
-.blog .card{
- box-shadow: 0 0 20px #ccc;
-}
-.blog .card img{
- width: 100%;
- height: 12em;
-}
-.blog .card-title{
- color:#F97300;
-  
-}
-.blog .card-body{
- padding: 1em;
-}
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-.card-img-top {
-    height: 25rem;
-    object-fit: cover;
-    width:100%;
-}
-.card{
-	margin-bottom:3rem;
-}
-.shadow {
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
-}
 
 /* Media Queries */
 
