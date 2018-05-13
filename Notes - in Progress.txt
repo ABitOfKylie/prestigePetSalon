@@ -1,13 +1,25 @@
 Notes - in Progress
 
 Nav bar -- links / collapse not working
+ - since switching to Btstrp4
+ 		- lost the spyscroll all of the below in place, 
+ 				what's missing?
+	 				css body{position:relative}
+	 				html <body data-spy="scroll" data-target="#navbarTogglerRef" data-offset="20">
+	 				<li class="nav-item">
+	      		<a class="nav-link" href="#fat">@fat</a>
+	    		</li>
+	    		<div><h4 id="fat">@fat</h4></div>
 
-.circle -- 
-	goal: responsive circle with text inside.
-	media query - display:none max-width : 568px
-	text: <p> "...make the cut"
-
-
+Cover button -- will not center horizontally
+			#coverButton{
+				background:#FF1493;
+				color:white;
+				position:absolute;
+				bottom:10%;
+				text-align: center;
+			}
+			
 testimonial - 
 	proper spacing/offsets between testimonials -currently have ghost columns to create spacing
 
@@ -27,3 +39,8 @@ Additions needed:
 	and accordian
 
 	consider carousel  
+
+	.circle -- (low priority)
+	goal: responsive circle with text inside.
+	media query - display:none max-width : 568px
+	text: <p> "...make the cut"

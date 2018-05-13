@@ -102,8 +102,8 @@ h2 + p {
 	background:#FF1493;
 	color:white;
 	position:absolute;
-	bottom:75px;
-	right:35px;
+	bottom:10%;
+	text-align: center;
 }
 
 /*-------------- Testing Area Resp. Circle --------------*/
@@ -165,14 +165,15 @@ h2 + p {
 
 /* -------- Navigation Bar*----------*/
 nav.navbar-inverse{
-	background:rgba(255, 105, 180, 0.5);
-	border:none;
+	background:rgba(255, 105, 180, 0.3);
+	border:0;
 	font-family: "Merriweather", serif;
 	font-weight:800;
 }
 
 .navbar-inverse .navbar-nav>li>a {
     color: black;
+/*    margin-right: 10px;*/
 }
 
 .navbar-inverse .navbar-brand {
@@ -227,7 +228,7 @@ blockquote cite{
 /* -------- Card Gallery Section*----------*/
 
 #gallery{
-	background:black;
+	background:slategray;
 }
 .album{
 	background-color:#F2DEE3;
@@ -262,6 +263,7 @@ img {
 	opacity: 0.5;*/
 	color:#ff1493;
 	text-align:center;
+	padding:60px 20px;
 }
 
 #team.container{
