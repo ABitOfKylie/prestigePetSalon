@@ -25,7 +25,18 @@
         <div class="collapse navbar-collapse" id="navbarTogglerRef">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">        
             <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#why-us">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#services">About</a>
+                <a class="dropdown-item" href="#services">Grooming</a>
+                <div class="dropdown-divider">Physical Therapy</div>
+                <a class="dropdown-item" href="#services">Massage</a>
+                <a class="dropdown-item" href="#services">Spa Specialties</a>
+              </div>
+            </li>
              <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>      
             <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
             <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
@@ -46,9 +57,12 @@
             An exclusive salon for those who can make the cut.
             </p>
         </div>  -->
-        <a href="#why-us" id="coverButton" role="button" class="btn btn-lg" >Start the transformation</a>
+        <a href="#services" id="coverButton" role="button" class="btn btn-lg" >Start the transformation</a>
       </div>
     </div>
+      <div>
+      <i class="fas fa-arrow-alt-square-up fa-4x" id="scrollArrows" style="background:Black" ></i>
+      </div>
     <section class="testimonial" id="quoteGroup">
       <div class="container">
         <div class="row">
@@ -65,7 +79,7 @@
         </div>      
       </div>
     </section>
-    <section id="why-us">
+    <section id="services">
       <div>
         <h2>Why should you choose Prestige Pet Spa?</h2>
         <div class="container" id="why-text">
