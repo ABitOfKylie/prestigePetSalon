@@ -1,7 +1,8 @@
 Notes - in Progress
 
-Nav bar -- links / collapse not working
+Nav bar -
  - since switching to Btstrp4
+ 		- collapse not working / hamburger not showing
  		- lost the spyscroll all of the below in place, 
  				what's missing?
 	 				css body{position:relative}
@@ -10,6 +11,7 @@ Nav bar -- links / collapse not working
 	      		<a class="nav-link" href="#fat">@fat</a>
 	    		</li>
 	    		<div><h4 id="fat">@fat</h4></div>
+	  - services dropdown - not responding - dead
 
 Cover button -- will not center horizontally
 			#coverButton{
@@ -19,9 +21,6 @@ Cover button -- will not center horizontally
 				bottom:10%;
 				text-align: center;
 			}
-			
-testimonial - 
-	proper spacing/offsets between testimonials -currently have ghost columns to create spacing
 
 cards 
 	goal: equal height
