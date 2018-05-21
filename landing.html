@@ -22,20 +22,28 @@
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#services">About</a>
-                        <a class="dropdown-item" href="#services">Grooming</a>
-                        <div class="dropdown-divider">Physical Therapy</div>
-                        <a class="dropdown-item" href="#services">Massage</a>
-                        <a class="dropdown-item" href="#services">Spa Specialties</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#services">About</a>
+                      <a class="dropdown-item" href="#services">Grooming</a>
+                      <a class="dropdown-item" href="#services">Massage</a>
+                      <a class="dropdown-item" href="#services">Spa Specialties</a>
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contact Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#joinUs">Join Us</a>
+                      <a class="dropdown-item" href="#">Find Us</a>
+                      <a class="dropdown-item" href="#">Book Appointment</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -64,8 +72,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <blockquote>
-                        &ldquo; I never realized how uncool my pet was before. Prestige Pet Spa lovingly crafted me into shape, complete with a skin-fade, fresh denim &amp; a total new identity &mdash; not only did it take days to achieve this new look, but they had this incredibly hot haute snobby attitude and were overbudget. Highly recommended! &rdquo;
-                        <cite>&mdash; Fifi, formerly Fido</cite>
+                        &ldquo; I never realized how uncool I was before. Prestige Pet Spa lovingly crafted me into shape, complete with a deep conditioning mud bath, keratin smoothing skin-fade, sanitary trim, fresh denim &amp; a total new identity &mdash; not only did it take days to achieve this new look, but they had this incredibly hot haute snobby attitude and were overbudget. Highly recommended! &rdquo;
+                        <cite>&mdash; Felicia, formerly Fido</cite>
                     </blockquote>
                 </div>
                 <div class="col-md-5 offset-md-1 ml-md-auto">
@@ -90,11 +98,12 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <h3>Classic &amp; Traditional</h3>
-                        <p>Doggo ipsum bork wow very biscit tungg maximum borkdrive pupperino blop, lotsa pats doggorino very jealous pupper. Doggorino shooberino heckin floofs very jealous pupper smol borkdrive what a nice floof, maximum borkdrive borking doggo bork doge very taste wow. mlem such treat sub woofer. H*ck he made many woofs smol borking doggo with a long snoot for pats heckin good boys and girls puggorino yapper, shoob very taste wow pats</p>
+                        <p>Our ultra contemporary grooming salon provides a premium, spa experience. Enhance your overall health and wellness with regular and personalized grooming utilizing our individually customized, high-quality services. We have several different grooming packages to choose from: "Essentials Only", "Essentials & Intimate Extras", and our "Head to Paw and back".  VIP membership offers posh add-ons and an a la carte menu to help tailor the experience to your lifestyle. </p>
                     </div>
                     <div class="col-sm-4">
                         <h3>Spa Specials</h3>
-                        <p>Doggo ipsum bork wow very biscit tungg maximum borkdrive pupperino blop, lotsa pats doggorino very jealous pupper. Doggorino shooberino heckin floofs very jealous pupper smol borkdrive what a nice floof, maximum borkdrive borking doggo bork doge very taste wow. mlem such treat sub woofer. H*ck he made many woofs smol borking doggo with a long snoot for pats heckin good boys and girls puggorino yapper, shoob very taste wow pats</p>
+                        <p>Indulge yourself. We offer a variety of spa packages and a la carte services. Join our Spa VIP program and get pampered every month. Blueberry facials, mineral mud baths, pawdicures with moisturizing nail oil treatments, and Swedish, Sport and Aromatherapeutic Massages. </p>
+                        <a href="" id="spaButton" role="button" class="round pink">Learn More<span class="round">Indulge and luxuriate. Book Now!</span></a>
                     </div>
                     <div class="col-sm-4">
                         <h3>Wild &amp; Trending Testing</h3>
@@ -272,7 +281,7 @@
             </div>
         </div>
     </section>
-    <section id="accordianTeam">
+    <section id="accordionTeam">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -283,9 +292,11 @@
         <div class="container">
             <div class="accordion" id="accordionStaff" role="tablist">
                 <div class="card">
-                    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading1">
-                        <h5 class="text-uppercase mb-0 py-1">
-                          <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Head Groomer</a>
+                    <div class="card-header" role="tab" id="heading1">
+                        <h5 class="">
+                          <span><i class="fas fa-cut fa-2x"></i></span>
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Head Groomer  
+                          </button>
                         </h5>
                     </div>
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="heading1" data-parent="#accordionStaff">
@@ -306,18 +317,19 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading2">
-                        <h5 class="text-uppercase mb-0 py-1">
-                <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Head Designer
-                </a>
-            </h5>
+                    <div class="card-header" role="tab" id="heading2">
+                        <h5 class="">
+                          <i class="fab fa-pied-piper-hat fa-2x"></i>
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">  Head Designer / Fashion Stylist
+                          </button>
+                        </h5>
                     </div>
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionStaff">
                         <div class="card-body">
                             <div class="row my-4">
                                 <div class="col-md-8">
-                                    <h2 class="font-weight-bold mb-3 black-text">Hi! I am the second one.</h2>
+                                    <h2 class="font-weight-bold mb-3 black-text">World Renowned Designer & Fashion Stylist.
+                                    </h2>
                                     <p class="mt-0">Ginger is a youthful trend-setter, celebrated for her unique styles & vibrant colors. She specializes in haute couture which can spice up special occasions or enhance your individual style. She shuns the cookie-cutter approach for a customized style that bring out the best in every individual.</p>
                                     <p class="mb-0">Ginger merges stylish sophistication with youthful vitality to produce a trend-setting creation every time.</p>
                                 </div>
@@ -331,16 +343,19 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading3">
-                        <h5 class="text-uppercase mb-0 py-1">
-                          <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Artistic Lead</a> 
+                    <div class="card-header" role="tab" id="heading3">
+                        <h5 class="">
+                          <i class="fas fa-paint-brush fa-2x"></i>
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  Artistic Visionary
+                          </button> 
                         </h5>
                     </div>
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionStaff">
                         <div class="card-body">
                             <div class="row my-4">
                                 <div class="col-md-8">
-                                    <h2 class="font-weight-bold mb-3 black-text">Artistic Visionary - Purple Haze</h2>
+                                    <h2 class="font-weight-bold mb-3 black-text">Artistic Visionary - Purple Haze
+                                    </h2>
                                     <p class="mt-0">Purple Haze is a precision stylist. She possesses true artistic vision and shows impeccable attention to every detail. Working with clients to achieve their individualized style is her passion. A master of her craft, she strives to keep up with the latest techniques and most desirable fashion innovations.</p>
                                     <p class="mb-0">Purple Haze's high fashion styles have been featured in local fashion shows, photography shoots, weddings, and many special occasions. Whether you are looking for that contemporary fashion trend look or something a little avant-garde, Purple Haze will provide you with the ultimate experience while delivering exceptional results.</p>
                                 </div>
@@ -354,22 +369,48 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading4">
-                        <h5 class="text-uppercase mb-0 py-1">
-                          <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Owner & Manager</a> 
+                    <div class="card-header" role="tab" id="heading4">
+                        <h5 class="">
+                          <i class="fas fa-hand-holding-heart fa-2x"></i>
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">  Physical Therapist
+                          </button>  
                         </h5>
                     </div>
                     <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordionStaff">
                         <div class="card-body">
                             <div class="row my-4">
                                 <div class="col-md-8">
+                                    <h2 class="font-weight-bold mb-3 black-text">Physical Therapy</h2>
+                                    <p class="mt-0">Bruno has been practicing massage therapy and other forms of body work for almost 15 years. It is Bruno's passion to assist and comfort individuals through various changes in their lives. This includes daily stress relief and injuries to traumatic events and life altering circumstances. It is a part of canine growth to learn to 'flow with the ever changing tides in our lives'. Incorporating alternative therapies such as massage, energy work, yoga, and other forms of movement, we become better equipped to deal with and adapt to these changes. This allows us to tune into our bodies needs and our own intuitive guidance.</p>
+                                </div>
+                                <div class="col-md-4 mt-3 pt-2">
+                                    <div class="view z-depth-1">
+                                        <img src="images/brunoPaws.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+                <div class="card">
+                    <div class="card-header" role="tab" id="heading5">
+                        <h5 class="">
+                          <i class="far fa-eye fa-2x"></i>
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">  Owner &amp; Manager
+                          </button>  
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionStaff">
+                        <div class="card-body">
+                            <div class="row my-4">
+                                <div class="col-md-8">
                                     <h2 class="font-weight-bold mb-3 black-text">Owner & Manager</h2>
-                                    <p class="mt-0">Abigail's vision for Prestige Pet Spa is to provide outstanding services in a relaxed professional environment. Prestige Pet Spa is based on the belief that fine furnishings, tranquil surroundings and quality service promote long-term relationships with valued clientele. Abigail believes that the client consultation is paramount to achieving complete satisfaction. She is on the cutting edge of style technique and has most recently attained the title of Redken Specialist in cutting, color and finishing.</p>
+                                    <p class="mt-0">Abigail's vision for Prestige Pet Spa is to provide outstanding services in a relaxed professional environment. Prestige Pet Spa is based on the belief that fine furnishings, tranquil surroundings and quality service promote long-term relationships with valued clientele. Abigail believes that the client consultation is paramount to achieving complete satisfaction. She is on the cutting edge of style technique and has most recently attained the title of Canis Latinicus Specialist in cutting, color and finishing.</p>
                                     <p class="mb-0">Abigail's passion for perfection drives her attention to detail and commitment to excellence.</p>
                                 </div>
                                 <div class="col-md-4 mt-3 pt-2">
                                     <div class="view z-depth-1">
-                                        <img src="images/afghanChic.jpg" alt="" class="img-fluid">
+                                        <img src="images/afghanChic.jpg" alt="afghan" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -437,6 +478,7 @@
                                 <option>2001</option>
                             </select>
                         </div>
+                        <div class="form-row">
                         <div class="form-group col-md-5">
                             <label for="inputName" class="sr-only">Name</label>
                             <input type="text" class="form-control" id="CanineName" placeholder="Canine Name">
@@ -445,7 +487,7 @@
                             <label for="inputEmail" class="sr-only">Email</label>
                             <input type="email" class="form-control" id="inputEmail" placeholder="Etail address">
                         </div>
-                    </div>
+                      </div>
                     <!--               <div class="w-100"></div>
  -->
                     <div class="form-row">
@@ -530,6 +572,83 @@
                         </div>
                     </div>
                     <button class="btn btn-block" id="buttonContact" type="submit">Bark For It</button>
+                </form>
+            </div>
+          </div>
+        <!-- container -->
+    </section>
+            <div class="row">
+              <div col-md-4>
+                <img src="images/giantPaw.jpg" alt="paw" class="img-fluid"
+              </div>
+                <form class="col-md-6 offset-md-2">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputService" class="sr-only">Service</label>
+                            <select id="inputService" class="form-control">
+                                <option selected>Service</option>
+                                <option>Basic Groom</option>
+                                <option>Trim & Polish</option>
+                                <option>Massage</option>
+                                <option>Spa Special</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 ml-auto">
+                            <label for="weekday" class="sr-only">Day</label>
+                            <select id="age" class="form-control">
+                                <option selected>Day of Service</option>
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 ml-auto">
+                            <label for="time" class="sr-only">Time</label>
+                            <select id="age" class="form-control">
+                                <option selected>Day of Service</option>
+                                <option>10:00 am</option>
+                                <option>11:00 am</option>
+                                <option>12:00 pm</option>
+                                <option>1:00 pm</option>
+                                <option>2:00 pm</option>
+                                <option>3:00 pm</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputName" class="sr-only">Name</label>
+                            <input type="text" class="form-control" id="CanineName" placeholder="Canine Name">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="inputEmail" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Etail address">
+                        </div>
+                    </div>
+                    <!--               <div class="w-100"></div>
+ -->
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea type="text" class="form-control" id="message" rows="3" placeholder="Share your Thoughts"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="phone" class="sr-only">City</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone #">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" />
+                            <label class="form-check-label" for="gridCheck">
+                                Yes! You can text me!
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-block" id="buttonContact" type="submit">Request Appointment</button>
                 </form>
             </div>
             <!-- end row -->

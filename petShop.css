@@ -108,14 +108,13 @@ h2 + p {
 
 #coverButton {
   position:absolute;
-  bottom:10%;
-  left:50%;
+  bottom:5%;
+  left:45%;
   transform:translate(-50%,-50%);
-  width:200px;
-  height:40px;
-  background:#FF1493
+  width:auto;
+/*  background:#FF1493
   border:1px solid pink;
-  color:white;
+*/  color:white;
   line-height:40px;
   text-align:center;
   border-radius:15px;
@@ -127,12 +126,13 @@ h2 + p {
 #coverButton:before {
   content:"";
   position:absolute;
+  background-color:#FF66C1;
   left:0px;
   right:0px;
   top:0px;
   bottom:0px;
   margin:auto;
-  width:400px;
+  width:auto;
   height:400px;
   left:-100px;
   border-radius:50%;
@@ -146,67 +146,6 @@ h2 + p {
   box-shadow:inset 0px 0px 0px 200px #6e48de;
 }
 
-#scrollArrows{
-	position:fixed;
-	bottom:3%;
-	right:2%;
-}
-/*-------------- Testing Area Resp. Circle --------------*/
-.circle {
-  display: flex;
-  min-width: 15%;
-  /* to allow placement of numbers on top of circles instead of below them */
-  white-space: nowrap;
-
-}
-
-.circle:before {
-  border-radius: 50%;
-  /* = 15%, almost gives us viewport width unit (15vw) */
-  width: 100%;
-  /*padding-bottom: 100%;
-*/  /* this way we should have 1px gap between circles */
-  margin: 15px .5px;
-  background-color: rgba(255, 250, 250, 1);
-  z-index: 2;
-  content: '';
-/*  display: inline-block;
-  circle to the middle, so that... [1] 
-  vertical-align: middle;*/
-  
-  /* to use viewport based units we can safely override the old units in this way */
-  padding-bottom: 0vw;
-  width: 15vw;
-  height: 15vw;
-
-  position:absolute;
-	bottom:10%;
-	left:20%;
-}
-
-.circle p {
-  display: flex;
-  font-size: 16pt;
-  color:red;
-  font-weight:800;
-/*  font-family: 'Italianno', cursive;
-*/text-align: center
- /*  -.5em = white space between p elements... 
-  margin: 0 -.5em 0 -100%;*/
-  padding: 0;
-  /* ... text can be middle too! [1] */
-  vertical-align: middle;
-  white-space: normal;
-  width: 100%;
-  /* for some reason that I can't figure out right now...
-    viewport units eliminate the white space issue */
-  margin: 0 0 0 -15vw;
-  width: 15vw;
-  position:absolute;
-	bottom:10%;
-	left:20%;
-}
-/* end testing area for responsive circle enclosing text*/
 
 /* -------- Navigation Bar*----------*/
 nav.navbar-inverse{
@@ -233,11 +172,10 @@ nav.navbar-inverse{
 /* -------- Testimonial Section*----------*/
 
 .testimonial{
-/*	background: url("images/graybg.jpg") top left no-repeat;
-	background-size:cover;*/
-	background: #c0c0c0;
-	opacity: 0.5;
-	box-shadow: inset 0 0 50px rgba(255, 182, 193, 0.5);
+	background: url("images/bgSilverGray.jpg") top left no-repeat;
+	background-size:cover;
+  opacity: 0.7;
+	box-shadow: inset 0 0 150px rgba(255, 182, 193, 0.7);
 }
 
 blockquote{
@@ -246,17 +184,15 @@ blockquote{
 	font-family: 'Merriweather', serif;
 	font-size: 18px;
 	font-weight:800;
-	/*color:#FF66C1;*/
 	color:black;
 
 }
 
 blockquote cite{
 	display: block;
-	text-align: center;
 	font-family: 'Pacifico', cursive;
-	font-size: 20px;
-	color: #ffb6c1;
+	font-size: 25px;
+  color: black;
 	font-weight:400;
 	margin-top: 10px;
 }
@@ -276,6 +212,117 @@ blockquote cite{
 	color:black;
 }
 
+/*-------------------Testing Circle Btn -----------*/
+#spaButton {
+/*    list-style: none;
+*/    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+
+  @-moz-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-webkit-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-o-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  .round {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;    
+    text-decoration: none;    
+    text-align: center;
+    font-size: 20px;    
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+    letter-spacing: -.065em;
+    font-family: "Merriweather", serif;   
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+    border-radius: 300px;
+    z-index: 1;
+    border-width: 4px;
+    border-style: solid;
+  }
+
+  .round:hover {
+    width: 130%;
+    height: 130%;
+    left: -15%;
+    top: -15%;
+    font-size: 33px;
+    padding-top: 38px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    z-index: 2;
+    border-size: 10px;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+
+  a.pink {
+    background-color: rgba(255, 182, 193,1);
+    color: rgba(254, 72, 100,1);
+    border-color: rgba(205,92,92,.2);
+  }
+
+  a.pink:hover {
+    color: rgba(255, 182, 193,1);
+  }
+
+  .round span.round {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 1px;
+    border: none;
+    padding: 40% 20% 0 20%;
+    color: #fff;
+  }
+
+  .round span:hover {
+    opacity: .85;
+    font-size: 16px;
+    -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);  
+  }
+
+  .pink span {
+    background: rgba(254, 72, 100,1);   
+  }
+
+
+/*------------------End testing circle btn -------*/
 /* -------- Card Gallery Section*----------*/
 
 #gallery{
@@ -321,15 +368,43 @@ img {
 	opacity: 1.0;
 }
 
+#accordionTeam{
+  background: url("images/graybg.jpg") top left no-repeat;
+  background-size:cover;
+/*  opacity: 0.5;
+*/  box-shadow: inset 0 0 50px rgba(120, 81, 169, 0.5);
+}
 .accordion p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-align:left;
+ }
 
 .accordion .card {
+  margin:0;
+  background-color: #FFE4E1 ;
+}
+
+.accordion .card-header{
+  font-size:3em;
+  font-family:"Merriweather", serif;
+  color:black;
+}
+
+.accordion .card-header h5{
+  color:#ff1493;
+}
+
+.accordion .card-header h5 button{
+  font-size:1.5rem;
+  font-family:"Merriweather", serif;
+  color:black;
+}
+/*.accordion .card {
   border: 0; }
   .accordion .card .card-header {
     border: 0; }
     .accordion .card .card-body {
-      line-height: 1.4; }
+      line-height: 1.4; }*/
 
 .paneltext{
 

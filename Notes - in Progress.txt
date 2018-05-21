@@ -2,16 +2,10 @@ Notes - in Progress
 
 Nav bar -
  - since switching to Btstrp4
- 		- collapse not working / hamburger not showing
- 		- lost the spyscroll all of the below in place, 
- 				what's missing?
-	 				css body{position:relative}
-	 				html <body data-spy="scroll" data-target="#navbarTogglerRef" data-offset="20">
-	 				<li class="nav-item">
-	      		<a class="nav-link" href="#fat">@fat</a>
-	    		</li>
-	    		<div><h4 id="fat">@fat</h4></div>
-	  - services dropdown - not responding - dead
+ 		- hamburger not showing styling
+ 		- contact us dropdown goes offscreen need to reposition
+ 			dropleft not doing it
+	  
 
 Cover button -- will not center horizontally
 			#coverButton{
@@ -22,14 +16,25 @@ Cover button -- will not center horizontally
 				text-align: center;
 			}
 
+Services section
+
+			round rotating button - text alignment, positioning
+				add 2 additional buttons (1 per column)
+
 cards 
 	goal: equal height
 
 Join Us section
-	goal: Text and Form on right.
 
 Additions needed: 
 	icon arrow up -- to return to top page
+
+	Contact Info section Hours,Add,phone, email(modal) & map
+
+	Sign in / Sign up ...nav bar
+
+	Appointment Section
+
 	card reveal/flip alternative overlay
 	1 card representative of each group - onClick/filter 
 	shows gallery of just that type  3 categories + View All btn
@@ -38,8 +43,3 @@ Additions needed:
 	and accordian
 
 	consider carousel  
-
-	.circle -- (low priority)
-	goal: responsive circle with text inside.
-	media query - display:none max-width : 568px
-	text: <p> "...make the cut"
