@@ -3,7 +3,7 @@ font-family: 'Italianno', cursive;
 font-family: 'Pacifico', cursive;
 font-family: 'Merriweather', serif;*/
 
-
+/* This is just a comment to mark a spot - will be removed */
 html,
 body,
 .cover {
@@ -13,66 +13,6 @@ body,
 
 body{
 	position:relative;
-}
-.cover{
-	background: url("images/pinkBlackSalon.jpg") top left no-repeat;
-	background-size: cover;
-	display:table;
-	width:100%;
-	padding: 0 20%;
-	box-shadow: inset 0 0 100px #FF1493;
-}
-
-.cover-text{
-	text-align: center;
-	color: black;
-	margin-top:20px;
-	display:table-cell;
-	vertical-align: top;
-}
-
-.cover-text h1{
-	font-family:"Pacifico", cursive;
-	margin-top:30px;
-	font-size:70px;
-	letter-spacing: -3px;
-}
-
-.cover-text p {
-	margin-top:10px;
-	font-weight:600;
-	font-family: 'Merriweather', serif;
-}
-
-nav.navbar-inverse{
-	background:rgba(255, 105, 180, 0.5)
-/*	font-family:'Lovers Quarrel', cursive;
-	font-weight:800;*/
-}
-
-.testimonial{
-	background: #222;
-}
-
-blockquote{
-	border:none;
-	margin: 0;
-	font-family: Georgia, Times, serif;
-	font-style: italic;
-	font-size: 32px;
-	color:#FF66C1;
-}
-
-blockquote cite{
-	display: block;
-	text-align: right;
-	text-transform: uppercase;
-	font-family: Helvetica, Arial, sans-serif;
-	font-style:normal;
-	font-size: 18px;
-	font-weight: bold;
-	color: #ffb6c1;
-	margin-top: 40px;
 }
 
 section{
@@ -92,7 +32,178 @@ h2 + p {
 	margin-top: -60px;
 }
 
-#why-us{
+/*-------- Cover/Overlay ----------*/
+
+.cover{
+	background: url("images/pinkBlackSalon.jpg") top left no-repeat;
+	background-size: cover;
+	display:table;
+	width:100%;
+	padding: 0 20%;
+	box-shadow: inset 0 0 100px #FF1493;
+	position:relative;
+}
+
+.cover-text{
+	text-align: center;
+	color: black;
+	margin-top:20px;
+	display:table-cell;
+	vertical-align: top;
+}
+
+.cover-text h1{
+	font-family:"Pacifico", cursive;
+	margin-top:1.25em;
+	font-size:4em;
+	letter-spacing: -4px;
+
+}
+
+.headerbg{
+	background-color:rgba(255, 250, 250, 0.5);
+	border-radius:150px;
+}
+#overlay {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    border-radius:50%;
+    top: 6rem;
+    left: 20rem;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 250, 250, 1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlaytext{
+    position: absolute;
+    font-size: 30px;    
+		font-family: 'Merriweather', serif;
+		letter-spacing: -3px;
+    text-align:center;
+    color: slategray;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#makeCut{
+	color: black;
+  font-family:"Italianno", cursive;
+	font-size: 1.75rem;
+  font-weight:800;
+/*  padding:0, 2px;
+  overflow-wrap: normal;
+  position:relative;*/
+/*	position:absolute;
+	bottom:10%;
+	left:20%;*/
+}
+
+/*#coverButton{
+	background:#FF1493;
+	color:white;
+	position:absolute;
+	bottom:10%;
+	text-align: center;
+}*/
+
+#coverButton {
+  position:absolute;
+  bottom:15%;
+/*  left:45%;
+*/  transform:translate(-50%,-50%);
+  width:auto;
+/*  background:#FF1493
+  border:1px solid pink;
+*/  color:white;
+  line-height:40px;
+  text-align:center;
+  border-radius:15px;
+  overflow:hidden;
+  z-index:2;
+  transition:all 800ms linear 0ms;
+  font-size:18px;
+}
+#coverButton:before {
+  content:"";
+  position:absolute;
+  background-color:#FF66C1;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  width:auto;
+  height:400px;
+  left:-100px;
+  border-radius:50%;
+  transition:all 800ms ease-in-out;
+  z-index:-1;
+}
+#coverButton:hover {
+  color:#fff;
+}
+#coverButton:hover:before {
+  box-shadow:inset 0px 0px 0px 200px #6e48de;
+}
+
+
+/* -------- Navigation Bar*----------*/
+nav.navbar-inverse{
+	background:rgba(255, 105, 180, 0.3);
+	border:0;
+	font-family: "Merriweather", serif;
+	font-weight:800;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+/*    margin-right: 10px;*/
+}
+
+.navbar-inverse .navbar-brand {
+	font-family:'Pacifico', cursive;
+	font-weight:100;
+	font-size:23px;
+	color:black!important;
+	border:none;
+  color: black;
+}
+
+/* -------- Testimonial Section*----------*/
+
+.testimonial{
+	background: url("images/bgSilverGray.jpg") top left no-repeat;
+	background-size:cover;
+  opacity: 0.7;
+	box-shadow: inset 0 0 150px rgba(255, 182, 193, 0.7);
+}
+
+blockquote{
+	border:none;
+	margin: 0;
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	font-weight:800;
+	color:black;
+
+}
+
+blockquote cite{
+	display: block;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+  color: black;
+	font-weight:400;
+	margin-top: 10px;
+}
+
+/* -------- Why Us Section / Services*----------*/
+
+#services{
 	background: url("images/pinkBubbleBackground.jpg") top left no-repeat;
 	background-size:cover;
 	opacity: 0.5;
@@ -104,17 +215,239 @@ h2 + p {
 	font-weight:800;
 	color:black;
 }
-#team{
-/*	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBwvYYBqTO6AzJCDNC4jDwYZ62B7Y1tDOjC4d5YUP8ZxoZd90zig") top left no-repeat;
-	background-size:cover;
-	opacity: 0.5;*/
-	color:#ff1493;
-	text-align:center;
+/*.card{
+  height:40px;
+}*/
+
+#services .album{
+  background:none;
 }
 
-#team.container{
-	opacity: 1.0;
+#services .card-title{
+  overflow-wrap: normal;
 }
+#services .card-body{
+  height: 400px;
+  background-color: #F2DEE3;
+  box-shadow: inset 0 0 100px #FF1493;
+}
+
+#services .card-text{
+  text-overflow: ellipsis;
+  overflow-y:scroll;
+  max-height: 200px;
+}
+
+/*------------- Services Animated Circle Btn -----------*/
+#spaButton {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    float:right;
+  }
+
+  @-moz-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-webkit-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-o-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  .round {
+    display: block;
+    position: absolute;
+    left: 0;
+    right:0;
+    top: 0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;    
+    text-decoration: none;    
+    text-align: center;
+    font-size: 20px;    
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+    letter-spacing: -.065em;
+    font-family: "Merriweather", serif;   
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+    border-radius: 300px;
+    z-index: 1;
+    border-width: 4px;
+    border-style: solid;
+  }
+
+  .round:hover {
+    width: 130%;
+    height: 130%;
+    left: -15%;
+    top: -15%;
+    font-size: 33px;
+    padding-top: 38px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    z-index: 2;
+    border-size: 10px;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+
+  a.pink {
+    background-color: rgba(255, 182, 193,1);
+    color: rgba(254, 72, 100,1);
+    border-color: rgba(205,92,92,.2);
+  }
+
+  a.pink:hover {
+    content:hidden;
+    color: rgba(255, 182, 193,1);
+  }
+
+  .round span.round {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 1px;
+    border: none;
+    padding: 40% 20% 0 20%;
+    color: #fff;
+  }
+
+  .round span:hover {
+    opacity: .85;
+    font-size: 16px;
+    -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);  
+  }
+
+  .pink span {
+    background: rgba(254, 72, 100,1);
+  }
+
+/*-------- Services - animated circle btn -------*/
+
+/* -------- Card Gallery Section*----------*/
+
+#gallery{
+	background:slategray;
+}
+.album{
+	background-color:#F2DEE3;
+}
+img {
+	max-height: 300px;
+	max-width: 400px;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.card-img-top {
+    height: 25rem;
+    object-fit: cover;
+    width:100%;
+}
+.card{
+	margin-bottom:3rem;
+	max-height: 500px;
+}
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+/* -------- Team Section*----------*/
+
+.staffHeader{
+  margin-bottom:20px;
+}
+
+#accordionTeam{
+  background: url("images/graybg.jpg") top left no-repeat;
+  background-size:cover;
+/*  opacity: 0.5;
+*/  box-shadow: inset 0 0 50px rgba(120, 81, 169, 0.5);
+}
+
+.accordion p {
+  font-size: 1em;
+  text-align:left;
+  padding: 1em 2em;
+ }
+
+.accordion h2{
+  color:purple;
+}
+.accordion .card {
+  margin:0;
+  background-color: #FFE4E1 ;
+}
+
+.accordion .card-header{
+  font-size:3em;
+  font-family:"Merriweather", serif;
+  color:black;
+  padding:0.15em;
+}
+
+.accordion .card-header h5{
+  color:#ff1493;
+}
+
+.accordion .card-header h5 button{
+  font-size:1.5rem;
+  font-family:"Merriweather", serif;
+  color:black;
+}
+
+.bio{
+  height:80vh;
+  overflow:auto;
+}
+
+.imgThumb{
+  height:0.13em;
+  width:0.13em;
+  align-content:center;
+}
+/*.accordion .card {
+  border: 0; }
+.accordion .card .card-header {
+    border: 0;
+    color:orange; }
+.accordion .card .card-body {
+      line-height: 1.4; }
+.paneltext{
+  color:green;
+}*/
+
+/* -------- Join Us Section*----------*/
 
 #signup{
 	background: url("images/pinkScarf.jpg") top left no-repeat;
@@ -129,8 +462,21 @@ h2 + p {
 	float:right;	
 }
 
-form{
+/*form{
 	float:right;
+}*/
+
+#buttonContact {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 footer{
@@ -145,59 +491,17 @@ footer a{
 }
 
 
-img {
-	max-height: 300px;
-	max-width: 400px;
-}
 
 
-.blog{
- margin: 4em 0;
- position: relative; 
-}
-.blog h1{
- color:#F97300;
- margin: 2em; 
-}
-.blog .card{
- box-shadow: 0 0 20px #ccc;
-}
-.blog .card img{
- width: 100%;
- height: 12em;
-}
-.blog .card-title{
- color:#F97300;
-  
-}
-.blog .card-body{
- padding: 1em;
-}
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-.card-img-top {
-    height: 25rem;
-    object-fit: cover;
-
-.card{
-	margin-bottom:3rem;
-}
-.shadow {
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
-}
-
-}
 /* Media Queries */
 
 @media only screen and ( max-width : 568px ) {
     .cover h1 {
         font-size: 40px;
     }
-    section {
-        padding: 20px;
-    }
+
     
+    #services .card-title{
+        font-size:;
+    }
 }
