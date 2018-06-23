@@ -1,39 +1,39 @@
 Notes - in Progress
 
 Nav bar -
- - since switching to Btstrp4
- 		- hamburger not showing styling
- 		- contact us dropdown goes offscreen need to reposition
- 			dropleft not doing it
-	  
-
-Cover button -- will not center horizontally
-			#coverButton{
-				background:#FF1493;
-				color:white;
-				position:absolute;
-				bottom:10%;
-				text-align: center;
-			}
+	Services dropdown: About and Book Now  only?
+	Contact Us dropdown: Join Us, Find Us, Book... change?
+	Sign In (with welcome username - href direct to appt)
 
 Services section
-
-			round rotating button - text alignment, positioning
-				add 2 additional buttons (1 per column)
-
-cards 
+#service .card 
 	goal: equal height
+	remove white border that becomes apparent md & lg
+	col-md-12  col-lg-4
 
-Join Us section
+#spaButton
+<a href="" id="spaButton" role="button" class="round pink">Tempted?<span class="round">Indulge and luxuriate. Book Now!</span></a>
 
-Additions needed: 
-	icon arrow up -- to return to top page
+			round rotating button - text alignment on hover, vertical alignment
+			class=pink -- on hover - Tempted text shows in background. 
+			.pink:hover{content:hidden, content:none not working}
 
-	Contact Info section Hours,Add,phone, email(modal) & map
+	moving all over the place, outside of card when screen size change. 
 
-	Sign in / Sign up ...nav bar
+	
+Gallery -
+	16 cards -- take way too much space. 
+	Maybe card text - name of service, flip card for details
+	consider a carousel
+	change background to match #accordionTeam section
 
-	Appointment Section
+Join Us Member Info section
+	this might be overload touse this as both new member sign up and member info
+	add username and password and password confirm
+	
+	justify fields
+
+Services & Pricing Section Appointment Section
 
 	card reveal/flip alternative overlay
 	1 card representative of each group - onClick/filter 
@@ -42,4 +42,37 @@ Additions needed:
 	need to add popover and a modal (Semantic proj comparison)
 	and accordian
 
-	consider carousel  
+	Select Service Section - 
+	checkbox: my usual,fav service combo (checked last visit)
+	Advanced Feature(at sign in - could get message, hey canine name, welcome back would you like your usual? checkbox - at which point it would direct directly to Service Selection with preselected items.)
+
+	Customize this visit then reveal 3 cards?
+	3 main cards
+	Classic Radio buttons, 
+		choose 1 Basic, Deluxe, or Deluxe Plus
+		when hover or learn more flip card for description
+	
+	Add Ons Check boxes choose multiple
+
+	Spa Packages - radio buttons , hover for more info?
+
+	Comments/Special needs - text field
+	Radio button: Save this as my favorite service combo - 
+	Phone number - text field
+	radio button Yes you can text me
+	<p> cancellation policy
+
+
+
+Additions needed: 
+	icon arrow up -- to return to top page
+
+	Contact Info section Hours,Add,phone, email(modal) & map
+
+	Sign in / Sign up ...nav bar
+
+	
+
+	
+
+	

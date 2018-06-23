@@ -54,20 +54,20 @@ h2 + p {
 
 .cover-text h1{
 	font-family:"Pacifico", cursive;
-	margin-top:80px;
-	font-size:70px;
-	letter-spacing: -3px;
+	margin-top:1.25em;
+	font-size:4em;
+	letter-spacing: -4px;
 
 }
 
 .headerbg{
-	background-color:rgba(255, 250, 250, 1);
-	border-radius:10px;
+	background-color:rgba(255, 250, 250, 0.5);
+	border-radius:150px;
 }
 #overlay {
     position: absolute;
     width: 30%;
-/*    height: 70%;*/
+    height: 70%;
     border-radius:50%;
     top: 6rem;
     left: 20rem;
@@ -93,6 +93,10 @@ h2 + p {
 	color: black;
   font-family:"Italianno", cursive;
 	font-size: 1.75rem;
+  font-weight:800;
+/*  padding:0, 2px;
+  overflow-wrap: normal;
+  position:relative;*/
 /*	position:absolute;
 	bottom:10%;
 	left:20%;*/
@@ -108,9 +112,9 @@ h2 + p {
 
 #coverButton {
   position:absolute;
-  bottom:5%;
-  left:45%;
-  transform:translate(-50%,-50%);
+  bottom:15%;
+/*  left:45%;
+*/  transform:translate(-50%,-50%);
   width:auto;
 /*  background:#FF1493
   border:1px solid pink;
@@ -197,7 +201,7 @@ blockquote cite{
 	margin-top: 10px;
 }
 
-/* -------- Why Us Section*----------*/
+/* -------- Why Us Section / Services*----------*/
 
 #services{
 	background: url("images/pinkBubbleBackground.jpg") top left no-repeat;
@@ -211,14 +215,36 @@ blockquote cite{
 	font-weight:800;
 	color:black;
 }
+/*.card{
+  height:40px;
+}*/
 
-/*-------------------Testing Circle Btn -----------*/
+#services .album{
+  background:none;
+}
+
+#services .card-title{
+  overflow-wrap: normal;
+}
+#services .card-body{
+  height: 400px;
+  background-color: #F2DEE3;
+  box-shadow: inset 0 0 100px #FF1493;
+}
+
+#services .card-text{
+  text-overflow: ellipsis;
+  overflow-y:scroll;
+  max-height: 200px;
+}
+
+/*------------- Services Animated Circle Btn -----------*/
 #spaButton {
-/*    list-style: none;
-*/    position: relative;
+    position: relative;
     display: inline-block;
     width: 100px;
     height: 100px;
+    float:right;
   }
 
   @-moz-keyframes rotate {
@@ -245,7 +271,9 @@ blockquote cite{
     display: block;
     position: absolute;
     left: 0;
+    right:0;
     top: 0;
+    bottom:0;
     width: 100%;
     height: 100%;
     padding-top: 30px;    
@@ -292,6 +320,7 @@ blockquote cite{
   }
 
   a.pink:hover {
+    content:hidden;
     color: rgba(255, 182, 193,1);
   }
 
@@ -318,11 +347,11 @@ blockquote cite{
   }
 
   .pink span {
-    background: rgba(254, 72, 100,1);   
+    background: rgba(254, 72, 100,1);
   }
 
+/*-------- Services - animated circle btn -------*/
 
-/*------------------End testing circle btn -------*/
 /* -------- Card Gallery Section*----------*/
 
 #gallery{
@@ -355,17 +384,8 @@ img {
 
 /* -------- Team Section*----------*/
 
-#team{
-/*	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBwvYYBqTO6AzJCDNC4jDwYZ62B7Y1tDOjC4d5YUP8ZxoZd90zig") top left no-repeat;
-	background-size:cover;
-	opacity: 0.5;*/
-	color:#ff1493;
-	text-align:center;
-	padding:60px 20px;
-}
-
-#team.container{
-	opacity: 1.0;
+.staffHeader{
+  margin-bottom:20px;
 }
 
 #accordionTeam{
@@ -374,11 +394,16 @@ img {
 /*  opacity: 0.5;
 */  box-shadow: inset 0 0 50px rgba(120, 81, 169, 0.5);
 }
+
 .accordion p {
-  font-size: 1rem;
+  font-size: 1em;
   text-align:left;
+  padding: 1em 2em;
  }
 
+.accordion h2{
+  color:purple;
+}
 .accordion .card {
   margin:0;
   background-color: #FFE4E1 ;
@@ -388,6 +413,7 @@ img {
   font-size:3em;
   font-family:"Merriweather", serif;
   color:black;
+  padding:0.15em;
 }
 
 .accordion .card-header h5{
@@ -399,16 +425,28 @@ img {
   font-family:"Merriweather", serif;
   color:black;
 }
+
+.bio{
+  height:80vh;
+  overflow:auto;
+}
+
+.imgThumb{
+  height:0.13em;
+  width:0.13em;
+  align-content:center;
+}
 /*.accordion .card {
   border: 0; }
-  .accordion .card .card-header {
-    border: 0; }
-    .accordion .card .card-body {
-      line-height: 1.4; }*/
-
+.accordion .card .card-header {
+    border: 0;
+    color:orange; }
+.accordion .card .card-body {
+      line-height: 1.4; }
 .paneltext{
+  color:green;
+}*/
 
-}
 /* -------- Join Us Section*----------*/
 
 #signup{
@@ -461,8 +499,9 @@ footer a{
     .cover h1 {
         font-size: 40px;
     }
-    section {
-        padding: 20px;
-    }
+
     
+    #services .card-title{
+        font-size:;
+    }
 }
