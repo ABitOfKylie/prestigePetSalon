@@ -547,18 +547,17 @@
     <section id=appointment>
       <div class="container">
         <div class="row">
-          <div col-md-4>
-            <img src="images/giantPaw.jpg" alt="paw" class="img-fluid" </div>
-            <form class="col-md-6 offset-md-2">
+         <aside class="col-md-6">
+            <form class="appointmentRequest">
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputService" class="sr-only">Service</label>
                         <select id="inputService" class="form-control">
-                            <option selected>Service</option>
-                            <option>Basic Groom</option>
-                            <option>Trim & Polish</option>
-                            <option>Massage</option>
-                            <option>Spa Special</option>
+                            <option selected>Appointment for</option>
+                            <option>Pet 1</option>
+                            <option>Pet 2</option>
+                            <option>generated</option>
+                            <option>owner petArr [3]</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4 ml-auto">
@@ -577,12 +576,13 @@
                         <label for="time" class="sr-only">Time</label>
                         <select id="age" class="form-control">
                             <option selected>Time of Service</option>
-                            <option>10:00 am</option>
-                            <option>11:00 am</option>
-                            <option>12:00 pm</option>
+                            <option>Morning (7-10)</option>
+                            <option>Mid Afternoon (11-2pm)</option>
+                            <option>Afternoon(3-6pm)</option>
                             <option>1:00 pm</option>
                             <option>2:00 pm</option>
                             <option>3:00 pm</option>
+                            <option>etc. </option>
                         </select>
                     </div>
                     <div class="form-group col-md-5">
@@ -605,6 +605,10 @@
                         <label for="phone" class="sr-only">City</label>
                         <input type="text" class="form-control" id="phone" placeholder="Phone #">
                     </div>
+                    <div class="form-group col-md-6">
+                        <label for="ownerName" class="sr-only">City</label>
+                        <input type="text" class="form-control" id="ownerName" placeholder="Owner Name">
+                    </div>
                 </div>
                 <div class="form-group">
                     <div class="form-check">
@@ -616,6 +620,62 @@
                 </div>
                 <button class="btn btn-block" id="buttonContact" type="submit">Request Appointment</button>
             </form>
+          </aside>
+          <aside class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h5><span class="clientNameInsert">client name's </span>Treatment Plan</h5>
+              </div>
+              <div class="card-body">
+                <table class="table table-hover shopping-cart-wrap">
+                  <thead class="text-muted">
+                    <tr>
+                      <th scope="col">Product1</th>
+                      <th scope="col" >Price</th>
+                      <th scope="col" class=text-right>Remove</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Product 1</td>
+                      <td>$156</td>
+                      <td><button type="button" class="btn btn-outline-danger btn-xs remove">
+                        <i class="fas fa-trash-alt fa-2x"></i>
+                      </button></td>
+                    </tr>
+                    <tr>
+                      <td>Product 1</td>
+                      <td>$156</td>
+                      <td><button type="button" class="btn btn-outline-danger btn-xs remove">
+                        <i class="fas fa-trash-alt fa-2x"></i>
+                      </button></td>
+                    </tr>
+                    <tr>
+                      <td>Product 1</td>
+                      <td>$156</td>
+                      <td><button type="button" class="btn btn-outline-danger btn-xs remove">
+                        <i class="fas fa-trash-alt fa-2x"></i>
+                      </button></td>
+                    </tr>
+                    <tr>
+                      <td>Product 1</td>
+                      <td>$156</td>
+                      <td><button type="button" class="btn btn-outline-danger btn-xs remove">
+                        <i class="fas fa-trash-alt fa-2x"></i>
+                      </button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Total</td>
+                      <td>$Wow</td>
+                    </tr>
+                  </tfoot>                  
+                </table>
+              </div>
+            </div>
+            
+          </aside>
         </div>
         <!-- end row -->
     </div>
@@ -627,7 +687,7 @@
 <!--           <div class="row">
             <div class="col-md-4"> -->
               <div class="card" id="grooming">
-                <img class="card-img-top" src="images/adorable1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/colorGroomGlasses.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h3 class="card-title">Grooming Packages</h3>
                       <p class="card-text">
@@ -652,7 +712,8 @@
                          </li>
                       </ul>                    
                   </div>
-                    <div class="card-footer text-muted">Check Out Now<i class="fas fa-cart-arrow-down"></i>
+                    <div class="card-footer text-muted">
+                      <a href="#">Request Appointment Day & Time <i class="far fa-clock"></i></a>
                     </div>                  
                 </div>
                 <div class="card" id="spaSpecialties">
@@ -689,7 +750,7 @@
                     </div>
                 </div>
                 <div class="card" id="makeOverCard">
-                <img class="card-img-top" src="images/adorable3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/poodleSquid.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h3 class="card-title">Make Over Packages</h3>
                       <p class="card-text">
