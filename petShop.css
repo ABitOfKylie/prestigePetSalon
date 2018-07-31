@@ -401,7 +401,12 @@ blockquote cite{
   height:30vw;
 }*/
 
-
+.scroll{
+  height: 11em;
+  overflow:scroll;
+/*  white-space: nowrap;
+  text-overflow: ellipsis;*/
+}
 
 #gallery{
 	background:slategray;
@@ -535,6 +540,17 @@ blockquote cite{
   height: 200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.scrollable{
+  display:block;
+  overflow:auto;
+  height:298px;
+  width:100%;
+}
+
+thead tr{
+  display:block;
 }
 
 /*---- card flip -----*/
