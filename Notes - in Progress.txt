@@ -3,11 +3,13 @@ Notes - in Progress
 Scrollspy - not working - (as you scroll down the page, nav items highlighted accordingly)
 
 Nav bar -
-	Services dropdown: About and Book Now  only?
+	Services dropdown: About, etc. BUT Massage href# not pointing to Team/PhysicalTherapist/Bruno Description in accordion.
+	
 	Contact Us dropdown: Join Us, Find Us, Book... change?
 	Sign In (with welcome username - href direct to appt)
 
 	Contact Us - dropdown  overflows right side.
+
 
 Services section
 #service .card 
@@ -23,6 +25,12 @@ Services section
 			.pink:hover{content:hidden, content:none not working}
 
 	moving all over the place, outside of card when screen size change. 
+
+Carousel:
+	Multi image per slide. Currently responsive.
+	Must make image size uniform. Indicators and prev/next arrows not always visible
+	Image captions -- consider adding
+	Once fully functioning - this can take the place of the Gallery.
 
 	
 Gallery -
@@ -46,15 +54,46 @@ Services & Pricing Section Appointment Section
 
 	Select Service Section - 
 	rename section - from Pricing to...
+
 	Check Card Deck -- text overflow on Card 2 & 3
+
+	Card Deck - make responsive - 
+	https://codepen.io/migli/pen/OQVRMw
+	
+	Radio Buttons! Chg mind - not dismissable. 
 
 	card reveal/flip for addons 
 
-	card footer not attached. Need Book&Checkout button
+	Need Book&Checkout button
 	create checkout/book section - see here https://getbootstrap.com/docs/4.0/examples/checkout/
-	
+
 
 	checkbox: my usual,fav service combo (checked last visit)
+
+	Appointment: 
+	styling!
+	remove button currently 3 options popover on hover, tooltip on hover and modal on click - hover will not work on phones but! modal creates extra clicks for user. 
+	Changed color of tooltip to match color of trash icon. 
+	Thinking stick with tooltip (forget about phone size 4 now)
+
+	<td><button type="button" class="btn btn-outline-danger btn-xs remove" data-toggle="confirmation" 
+                        data-placement="right" 
+                        data-popout="true"
+                        data-btn-ok-label="Continue" data-btn-ok-class="btn-success"
+                        data-btn-ok-icon-class="material-icons" data-btn-ok-icon-content="check"
+                        data-btn-cancel-label="Stoooop!" data-btn-cancel-class="btn-danger"
+                        data-btn-cancel-icon-class="material-icons" data-btn-cancel-icon-content="close"
+                        data-title="Is it ok?" data-content="This might be dangerous">
+                        <i class="fas fa-trash-alt fa-2x"></i>
+                      </button></td>
+
+	table: fix the thead and the tfoot, make tbody scrollable
+	overflow:auto;
+  overflow-x:hidden;
+  height:100px; example
+
+  same height & width for both cards 
+
 	
 	Ideas: Advanced Feature(at sign in - could get message, hey canine name, welcome back would you like your usual? checkbox - at which point it would direct directly to Service Selection with preselected items.)
 	Customize this visit then reveal 3 cards?
@@ -83,7 +122,4 @@ Additions needed:
 	Sign in / Sign up ...nav bar
 
 	
-
-	
-
 	

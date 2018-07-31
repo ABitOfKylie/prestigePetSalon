@@ -321,7 +321,8 @@ blockquote cite{
 
   a.pink:hover {
     content:hidden;
-    color: rgba(255, 182, 193,1);
+    color: rgba(255, 182, 193, 0.4);
+    display:hidden;
   }
 
   .round span.round {
@@ -349,14 +350,19 @@ blockquote cite{
   .pink span {
     background: rgba(254, 72, 100,1);
   }
+  .pink:hover
 
-/*-------- Services - animated circle btn -------*/
+/*-------- End of animated circle btn Services -  -------*/
 
+/*  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }*/
 /* -------- Card Gallery Section*----------*/
 
 #gallery{
 	background:slategray;
-/*    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+/*  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     min-height: 100vh;
     font: normal 16px sans-serif;*/
 }
@@ -412,7 +418,10 @@ blockquote cite{
     background-color: transparent !important;
 }
 
-
+.card-img-top-250{
+  max-height: 250px;
+  overflow:hidden;
+}
 /* -------- Team Section*----------*/
 
 .staffHeader{
@@ -467,40 +476,168 @@ blockquote cite{
   width:0.13em;
   align-content:center;
 }
-/*.accordion .card {
-  border: 0; }
-.accordion .card .card-header {
-    border: 0;
-    color:orange; }
-.accordion .card .card-body {
-      line-height: 1.4; }
-.paneltext{
-  color:green;
+
+/* -------- Pricing Section*----------*/
+/*.card-deck{
+  
+  width: 100%;
+  margin-bottom: .75rem;
+  table-layout: fixed;
+  border-spacing: 1.25rem 0;
 }*/
+.pricePic{
+  margin-bottom: 1rem;
+  display: block;
+  width: 80%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---- card flip -----*/
+/*https://www.codicode.com/art/3d_flipping_cards_pure_css3_card_flip_plugin.aspx
+*/
+.flipcard {
+  position: relative;
+/*  width: 220px;
+  height: 160px;
+  perspective: 500px;*/
+}
+.flipcard.v:hover .front, .flipcard.v.flip .front{
+  transform: rotateX(180deg);
+}
+.flipcard.v:hover .back, .flipcard.v.flip .back{
+  transform: rotateX(0deg);
+}
+.flipcard.v .back{
+  transform: rotateX(-180deg);
+}
+.flipcard.h:hover .front, .flipcard.h.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard.h:hover .back, .flipcard.h.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard.h .back{
+  transform: rotateY(-180deg);
+}
+.flipcard .front, .flipcard .back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  color: white;
+  background-color: #000;
+  padding: 10px;
+  backface-visibility: hidden;
+}
+
+/* -------- Appointment Section*----------*/
+/*aside{
+  height:500px;
+} */
+/*want to align the two asides' heights in the appointment section*/
+/*.shoppingCart{
+  height:400px;
+}*/
+/*
+.appointmentContainer{
+  width:100%;
+}*/
+#appointment .card{
+  height: 600px;
+  border:solid 3px black;
+}
+
+#appointment .card .card-header{
+  padding-top:2px;
+  font-size:12px;
+  text-align: center;
+  color:black;
+  background-color:rgba(253, 208, 215, 1);
+  font-family:"Merriweather", serif;
+}
+
+table{
+/*  overflow:auto;
+  overflow-x:hidden;*/
+  height:300px;
+  font-size:14px;
+}
+
+.color-hover tbody tr:hover td { 
+  background: rgba(253, 242, 244, 1); 
+}
+
+tbody{
+  display:block;
+  height:200px;
+  overflow:auto;
+}
+
+thead, tbody, tr{
+  display:table;
+  table-layout: fixed;
+  width:100%;
+  
+}
+
+thead{
+  width:calc(100%-1em);
+  background-color:rgba(253, 208,215, 1);
+  color:#000;
+}
+
+.remove{
+  float:right;
+  color:red;
+  line-height: 1.25em;
+}
+
+i.fa-trash-alt{
+  color:#e60073;!important
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #000;
+    text-align: center;
+    background-color:  #e60073;
+    border-radius: .25rem;
+}
+
+tfoot{
+  text-align: right;
+  background-color:rgba(253, 208, 215, 1);
+  color:#000;
+}
+
+#totalAmt{
+  text-align:left;
+}
 
 /* -------- Join Us Section*----------*/
 
 #signup{
-	background: url("images/pinkScarf.jpg") top left no-repeat;
-	/*background-size:cover;*/
-	opacity: 0.8;
+  background: url("images/pinkScarf.jpg") top left no-repeat;
+  /*background-size:cover;*/
+  opacity: 0.8;
 }
 .input-group-btn:last-child>.btn{
-	background-color:#ff1493;
+  background-color:#ff1493;
 }
 
 .joinUs{
-	float:right;	
+  float:right;  
 }
-
-/*form{
-	float:right;
-}*/
 
 #buttonContact {
     background-color: pink;
     border: none;
-    color: white;
+    color: #000;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -510,33 +647,16 @@ blockquote cite{
     cursor: pointer;
 }
 
-/* -------- Appointment Section*----------*/
-
-.shopping-cart-wrap .price {
-    color: #007bff;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 5px;
-    display: block;
-}
-
-.remove{
-  float:right;
-}
-
 footer{
-	background: #ffc0cb;
-	text-align: center;
-	padding: 20px;
-	font-family: Georgia, Times, serif;
+  background: #ffc0cb;
+  text-align: center;
+  padding: 20px;
+  font-family: Georgia, Times, serif;
 }
 
 footer a{
-	color:#ff1493;
+  color:#ff1493;
 }
-
-
-
 
 /* Media Queries */
 
