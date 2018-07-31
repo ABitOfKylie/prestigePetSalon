@@ -360,6 +360,49 @@ blockquote cite{
   }*/
 /* -------- Card Gallery Section*----------*/
 
+/*.imgUniform{
+  height:200px;
+  width:200px;
+
+}*/
+
+
+.grouping {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.grouping img {
+  width: 30vw;
+  height: 30vw;
+}
+
+.grouping-cover img {
+  object-fit: cover;
+}
+
+.introPic {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.introPic img {
+  width: 30vw;
+  height: 30vw;
+}
+
+.introPic-cover img {
+  object-fit: contain;
+}
+
+
+/*.singleImg{
+  width:130vw;
+  height:30vw;
+}*/
+
+
+
 #gallery{
 	background:slategray;
 /*  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
