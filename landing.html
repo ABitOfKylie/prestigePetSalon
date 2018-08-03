@@ -143,6 +143,8 @@
           <li data-target="#clientCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#clientCarousel" data-slide-to="1"></li>
           <li data-target="#clientCarousel" data-slide-to="2"></li>
+          <li data-target="#clientCarousel" data-slide-to="3"></li>
+
         </ul>
         <!-- end of inside side indicators -->
         <!-- The slideshow -->
@@ -577,33 +579,78 @@
         </div>
     </section>
     <section id="pricing">
-        <div class="container">
-            <div class="card-deck grouping">
-              <div class="holdAll image-flip ontouchstart="this.classlist.toggle('hover');">
-              <div class="main-flip flipcard v">
-                <div class="frontSide">
-                  <div class="card" id="grooming">
-                    <img class="card-img-top pricePic" src="images/colorGroomGlasses.jpg" alt="Card image cap">
+      <div class="container">
+        <div class="card-deck">
+          <div class="holdAll image-flip ontouchstart="this.classlist.toggle('hover');">
+            <div class="main-flip flipcard v">
+              <div class="frontSide">
+                <div class="card" id="grooming">
+                  <img class="card-img-top pricePic" src="images/colorGroomGlasses.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h3 class="card-title">Grooming Packages</h3>
+                      <p class="card-text">
+                          Don't forget to check out the <a href="#">addons</a>.
+                      </p>
+                      <ul>
+                          <li class="form-check" data-trigger="click" data-toggle="popover" title="The Essentials" data-content="Therapeutic warm water bath, brush out and fluff dry, ear cleaning and nail trim">
+                              <input class="form-check-input" type="radio" name="groomChoice" id="basicGroom">
+                              <label class="form-check-label" for="basicGroom">The Essentials
+                              </label>
+                          </li>
+                          <li class="form-check" data-trigger="click" data-toggle="popover" title="Mini Spa" data-content="A touch up service, sanitary trip, feet scissoring and pad shaving, minor clipping - includes The Essentials package.">
+                              <input class="form-check-input" type="radio" name="groomChoice" id="miniSpa">
+                              <label class="form-check-label" for="miniSpa">Touch Ups Groom
+                              </label>
+                          </li>
+                          <li class="form-check" data-trigger="click" data-toggle="popover" title="Deluxe Spa" data-content="Full body haircut includes The Essentials package.">
+                              <input class="form-check-input" type="radio" name="groomChoice" id="deluxeGroom">
+                              <label class="form-check-label" for="deluxeGroom">
+                                  Deluxe Groom
+                              </label>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="card-footer text-muted">
+                      <a href="#appointment">Request Appointment Day & Time <i class="far fa-clock"></i></a>
+                  </div>
+                </div> <!-- end card -->
+              </div>  <!-- end frontSide -->
+              <div class="backSide">
+                <div class="card">
+                  <div class="card-title">
+                    Hello I'm the backside
+                  </div>
+                </div>
+              </div> <!-- end of backside -->
+              <div class="frontSide">
+                <div class="card" id="spaSpecialties">
+                    <img class="card-img-top pricePic" src="images/perfumedPup.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h3 class="card-title">Grooming Packages</h3>
+                        <h3 class="card-title">Spa Specialties</h3>
                         <p class="card-text">
-                            Don't forget to check out the <a href="#">addons</a>.
+                            Pick a package or create your own bundle <a href="#">treatments</a>.
                         </p>
                         <ul>
-                            <li class="form-check" data-trigger="click" data-toggle="popover" title="The Essentials" data-content="Therapeutic warm water bath, brush out and fluff dry, ear cleaning and nail trim">
-                                <input class="form-check-input" type="radio" name="groomChoice" id="basicGroom">
-                                <label class="form-check-label" for="basicGroom">The Essentials
+                            <li class="form-check" data-trigger="click" data-toggle="popover" title="Refresher" data-content="Fill in Hot Oil Wrap, Aromatherapy....">
+                                <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg1">
+                                <label class="form-check-label" for="spaPkg1">Refresher Package
                                 </label>
                             </li>
-                            <li class="form-check" data-trigger="click" data-toggle="popover" title="Mini Spa" data-content="A touch up service, sanitary trip, feet scissoring and pad shaving, minor clipping - includes The Essentials package.">
-                                <input class="form-check-input" type="radio" name="groomChoice" id="miniSpa">
-                                <label class="form-check-label" for="miniSpa">Touch Ups Groom
+                            <li class="form-check" data-trigger="click" data-toggle="popover" title="Rejuvenate" data-content="Deep conditioning Mask - Mud or Sauna, Aromatherapy, Pawdicure and NailPawlish">
+                                <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg2">
+                                <label class="form-check-label" for="spaPkg2">Rejuvenater Package
                                 </label>
                             </li>
-                            <li class="form-check" data-trigger="click" data-toggle="popover" title="Deluxe Spa" data-content="Full body haircut includes The Essentials package.">
-                                <input class="form-check-input" type="radio" name="groomChoice" id="deluxeGroom">
-                                <label class="form-check-label" for="deluxeGroom">
-                                    Deluxe Groom
+                            <li class="form-check" data-trigger="click" data-toggle="popover" title="Reformation" data-content="Head to Toe Pampering. Deep Conditioning Wrap, Aromatherapy, Blueberry Facial, Pawdicure and NailPawlish">
+                                <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg3">
+                                <label class="form-check-label" for="spaPkg3">
+                                    Reformation
+                                </label>
+                            </li>
+                            <li class="form-check" data-trigger="click" data-toggle="popover" title="Massage" data-content="Head to Toe Pampering. Swedish, Thai, Aromatherapy">
+                                <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg4">
+                                <label class="form-check-label" for="spaPkg4">
+                                    Massage
                                 </label>
                             </li>
                         </ul>
@@ -611,53 +658,8 @@
                     <div class="card-footer text-muted">
                         <a href="#appointment">Request Appointment Day & Time <i class="far fa-clock"></i></a>
                     </div>
-                  </div> <!-- end card -->
-                </div>  <!-- end frontSide -->
-                <div class="backSide">
-                  <div class="card">
-                    <div class="card-title">
-                      Hello I'm the backside
-                    </div>
-                  </div>
-                </div> <!-- end of backside -->
-                <div class="frontSide">
-                  <div class="card" id="spaSpecialties">
-                      <img class="card-img-top pricePic" src="images/perfumedPup.jpg" alt="Card image cap">
-                      <div class="card-body">
-                          <h3 class="card-title">Spa Specialties</h3>
-                          <p class="card-text">
-                              Pick a package or create your own bundle <a href="#">treatments</a>.
-                          </p>
-                          <ul>
-                              <li class="form-check" data-trigger="click" data-toggle="popover" title="Refresher" data-content="Fill in Hot Oil Wrap, Aromatherapy....">
-                                  <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg1">
-                                  <label class="form-check-label" for="spaPkg1">Refresher Package
-                                  </label>
-                              </li>
-                              <li class="form-check" data-trigger="click" data-toggle="popover" title="Rejuvenate" data-content="Deep conditioning Mask - Mud or Sauna, Aromatherapy, Pawdicure and NailPawlish">
-                                  <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg2">
-                                  <label class="form-check-label" for="spaPkg2">Rejuvenater Package
-                                  </label>
-                              </li>
-                              <li class="form-check" data-trigger="click" data-toggle="popover" title="Reformation" data-content="Head to Toe Pampering. Deep Conditioning Wrap, Aromatherapy, Blueberry Facial, Pawdicure and NailPawlish">
-                                  <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg3">
-                                  <label class="form-check-label" for="spaPkg3">
-                                      Reformation
-                                  </label>
-                              </li>
-                              <li class="form-check" data-trigger="click" data-toggle="popover" title="Massage" data-content="Head to Toe Pampering. Swedish, Thai, Aromatherapy">
-                                  <input class="form-check-input" type="radio" name="spaChoice" id="spaPkg4">
-                                  <label class="form-check-label" for="spaPkg4">
-                                      Massage
-                                  </label>
-                              </li>
-                          </ul>
-                      </div>
-                      <div class="card-footer text-muted">
-                          <a href="#appointment">Request Appointment Day & Time <i class="far fa-clock"></i></a>
-                      </div>
-                  </div> <!-- end card -->
-                </div>  <!-- end frontside -->
+                </div> <!-- end card -->
+              </div>  <!-- end frontside -->
               <div class="frontSide">
                   <div class="card" id="makeOverCard">
                       <img class="card-img-top pricePic" src="images/poodleSquid.jpg" alt="Card image cap">
@@ -690,14 +692,14 @@
                       </div>
                   </div> <!-- end of card -->
               </div> <!-- end of frontSide -->
-            <div class="backSide">
+              <div class="backSide">
               <div class="card">
                 <div class=card-title>
                   Hello - I'm the backside
                 </div>
               </div>
-            </div> <!-- end backSide -->
-            </div> <!-- end main-flip -->                 
+              </div> <!-- end backSide -->
+              </div> <!-- end main-flip -->                 
           </div> <!-- end holdAll -->
         </div> <!-- end card-deck -->
       </div> <!-- end container -->
