@@ -1,0 +1,317 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>card to modal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="petShop.css">
+
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top imgSizeFix" src="images/adorable1.jpg" alt="Card image cap">
+				<div class="card-body">
+			    <h5 class="card-title">Grooming</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			  </div>
+			  <div class="card-footer">
+			  	<button type="button" class="buttonModal" data-toggle="modal" data-target="#groomModal">See More Images</button>
+			  </div>
+			</div>
+    </div>
+		<div class="col-md-4">
+			<div class="card">
+					<img class="card-img-top imgSizeFix" src="images/perfumedPup.jpg" alt="Card image cap">
+					<div class="card-body">
+				    <h5 class="card-title">Spa Days</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				  <div class="card-footer">
+						<button type="button" class="buttonModal" data-toggle="modal" data-target="#spaModal">See More Images</button>				  
+					</div>
+				</div>				
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+					<img class="card-img-top imgSizeFix" src="images/poodleSquid.jpg" alt="Card image cap">
+					<div class="card-body">
+				    <h5 class="card-title">Individualism</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				  <div class="card-footer">
+				  	<button type="button" class="buttonModal" data-toggle="modal" data-target="#wildModal">See More Images</button>
+				  </div>
+			</div>				
+		</div>		
+	</div>
+</div>
+			<!-- Modal Groom-->
+<div class="modal fade" id="groomModal" tabindex="-1" role="dialog" aria-labelledby="groomLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="groomLabel">Grooming Images</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div id="carouselinModal" class="carousel slide" data-ride="carousel">
+      		<!-- Indicators -->
+	        <ul class="carousel-indicators">
+	          <li data-target="#carouselinModal" data-slide-to="0" class="active"></li>
+	          <li data-target="#carouselinModal" data-slide-to="1"></li>
+	          <li data-target="#carouselinModal" data-slide-to="2"></li>
+	          <li data-target="#carouselinModal" data-slide-to="3"></li>
+
+	        </ul>
+        <!-- end of inside side indicators -->
+					<div class="carousel-inner">
+		        <div class="carousel-item active grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/adorable2.jpg" alt=DogWithshowerCap>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/adorable3.jpg" alt=DogWithshowerCap>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/maltese.jpg" alt=DogWithshowerCap>
+	              </div>
+	            </div>
+	          </div>         
+	          <div class="carousel-item grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/showerCap2.jpg" alt=DogWithshowerCap>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/towelHead1.jpg" alt=DogWithshowerCap>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/towelHead2.jpg" alt=DogWithshowerCap>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="carousel-item grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/curlTop.jpg" alt=DogWithCurlers>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/curlers1.jpg" alt=DogWithCurlers>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/curlers2.jpg" alt=DogWithCurlers>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="carousel-item grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/adorable2.jpg" alt=GroomedDog>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/adorableCurlBeard.jpg" alt=GroomedDog>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/adorableComb.jpg" alt=GroomedDog>
+	              </div>             
+	            </div>
+	          </div>
+	        </div>
+	          <!-- Controls -->
+				  <a class="carousel-control-prev" href="#carouselinModal" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselinModal" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+	      </div>
+			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Book Now</button>
+      </div>
+    </div> <!-- end modal content -->
+  </div> <!-- end modal dialog -->
+</div> <!-- end modal -->
+<!-- end modal -->
+			<!-- Modal Spa-->
+<div class="modal fade" id="spaModal" tabindex="-1" role="dialog" aria-labelledby="groomLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="spaLabel">Spa Images</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div id="carouselinModalSpa" class="carousel slide" data-ride="carousel">
+      		<!-- Indicators -->
+	        <ul class="carousel-indicators">
+	          <li data-target="#carouselinModalSpa" data-slide-to="0" class="active"></li>
+	          <li data-target="#carouselinModalSpa" data-slide-to="1"></li>
+	          <li data-target="#carouselinModalSpa" data-slide-to="2"></li>
+	          <li data-target="#carouselinModalSpa" data-slide-to="3"></li>
+
+	        </ul>
+        <!-- end of inside side indicators -->
+					<div class="carousel-inner">
+		        <div class="carousel-item active grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/maltese.jpg" alt=DogPerfume>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/cucumberEyes.jpg" alt=DogPerfume>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/eyeMaskPink.jpg" alt=DogPerfume>
+	              </div>
+	            </div>
+          	</div>   
+	          <div class="carousel-item grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/perfumedPup.jpg" alt=GroomedDog>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/lounge.jpg" alt=GroomedDog>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/adorablePinkTub.jpg" alt=GroomedDog>
+	              </div>             
+	            </div>
+	          </div>
+	          <div class="carousel-item grouping grouping-cover">
+            <div class="row">
+              <div class="col">
+                    <img class="img-fluid" src="images/adorablePinkTub.jpg" alt=BlueZebra>
+              </div>
+              <div class="col">
+                    <img class="img-fluid" src="images/pinkRobe.jpg" alt=BlueZebra>
+              </div>
+              <div class="col">
+                    <img class="img-fluid" src="images/lounge.jpg" alt=BlueZebra>
+              </div>
+            </div>
+          </div> 
+	        </div>
+	          <!-- Controls -->
+				  <a class="carousel-control-prev" href="#carouselinModalSpa" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselinModalSpa" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+	      </div>
+			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Book Now</button>
+      </div>
+    </div> <!-- end modal content -->
+  </div> <!-- end modal dialog -->
+</div> <!-- end modal -->
+<!-- end modal spa -->
+			<!-- Modal Wild Trends-->
+<div class="modal fade" id="wildModal" tabindex="-1" role="dialog" aria-labelledby="groomLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="wildLabel">Wild & Trending Images</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div id="carouselinModalWild" class="carousel slide" data-ride="carousel">
+      		<!-- Indicators -->
+	        <ul class="carousel-indicators">
+	          <li data-target="#carouselinModalWild" data-slide-to="0" class="active"></li>
+	          <li data-target="#carouselinModalWild" data-slide-to="1"></li>
+	          <li data-target="#carouselinModalWild" data-slide-to="2"></li>
+	          <li data-target="#carouselinModalWild" data-slide-to="3"></li>
+
+	        </ul>
+        <!-- end of inside side indicators -->
+					<div class="carousel-inner">
+		        <div class="carousel-item active grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/BlueZebra.jpg" alt=DogZebra>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/poodleFlower.jpg" alt=Dogflower>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/poodleCareBear.jpg" alt=DogCareBear>
+	              </div>
+	            </div>
+          	</div>   
+	          <div class="carousel-item grouping grouping-cover">
+	            <div class="row">
+	              <div class="col">
+	                    <img class="img-fluid" src="images/poodleIguana.jpg" alt=PoodleIguana>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/poodleSnail.jpg" alt=PoodleSnail>
+	              </div>
+	              <div class="col">
+	                    <img class="img-fluid" src="images/BlueZebra.jpg" alt=GroomedDog>
+	              </div>             
+	            </div>
+	          </div>
+	          <div class="carousel-item grouping grouping-cover">
+            <div class="row">
+              <div class="col">
+                    <img class="img-fluid" src="images/adorablePinkTub.jpg" alt=BlueZebra>
+              </div>
+              <div class="col">
+                    <img class="img-fluid" src="images/pinkRobe.jpg" alt=BlueZebra>
+              </div>
+              <div class="col">
+                    <img class="img-fluid" src="images/lounge.jpg" alt=BlueZebra>
+              </div>
+            </div>
+          </div> 
+	        </div>
+	          <!-- Controls -->
+				  <a class="carousel-control-prev" href="#carouselinModalWild" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselinModalWild" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+	      </div>
+			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Book Now</button>
+      </div>
+    </div> <!-- end modal content -->
+  </div> <!-- end modal dialog -->
+</div> <!-- end modal -->
+<!-- end modal wild -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+      <script src="path/to/bootstrap-confirmation.js"></script>
+</body>
+</html>

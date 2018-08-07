@@ -20,28 +20,22 @@ Services section
 #spaButton
 <a href="" id="spaButton" role="button" class="round pink">Tempted?<span class="round">Indulge and luxuriate. Book Now!</span></a>
 
-			round rotating button - text alignment on hover, vertical alignment
-			class=pink -- on hover - Tempted text shows in background. 
+Issue: Tempted text shows in background. 
 			.pink:hover{content:hidden, content:none not working}
+Responsiveness:
+	768 3 col. middle column button moving outside of card when screen size change.
+	640 1 col only - too much bottom padding  
+	recheck this -- 
 
-	moving all over the place, outside of card when screen size change. 
-
-Carousel:
+Section modalGallery:
+background-image - same solution as Testimonials but not working here
+Carousel inside Modal:
 	Multi image per slide. Currently responsive.
-	Must make image size uniform. Indicators and prev/next arrows not always visible
-	Image captions -- consider adding
-	Once fully functioning - this can take the place of the Gallery.
-
-	
-Gallery -
-	16 cards -- take way too much space. 
-	Maybe card text - name of service, flip card for details
-	consider a carousel
-	change background to match #accordionTeam section
-
-	1 card representative of each group - onClick/filter 
-	shows gallery of just that type  3 categories + View All btn
-
+	Indicators and prev/next arrows not always visible
+	Individualism group of slides need fixing -- object fit or zoom...
+Responsiveness
+At 768 - still 3 columns but the See More Images Buttons are living their own lives - over stretches the modal footer. 640, 1024 and larger all work - just 768 problematic.
+Button Focus -- See More Images Buttons: focus hover darker color - stays dark after click. Only disappears when you click on something else...kind of like a blur effect. Not sure how to override. 
 
 Join Us  #signup Member Info section
 	this might be overload to use this as both new member sign up and member info

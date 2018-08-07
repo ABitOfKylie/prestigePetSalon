@@ -1,0 +1,117 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tester</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="petShop.css">
+</head>
+
+<body>
+    <h1>hi there</h1>
+    <div class="scene">
+        <div class="card colorBlock">
+            <div class="cardFace cardFaceFront">
+                Hello
+            </div>
+            <div class="cardFace cardFaceBack">
+                Goodbye
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <h1>Flipping out Again</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="flipcard h">
+                <div class="front">
+                    <div class="card cardId1" style="width: 18rem;">
+                        <img class="card-img-top pricePic" src="images/colorGroomGlasses.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">Grooming Packages</h3>
+                            <p class="card-text">
+                                Don't forget to check out the <a id="addOns" href="#">addons</a>.
+                            </p>
+                            <ul>
+                                <li class="form-check" data-trigger="click" data-toggle="popover" title="The Essentials" data-content="Therapeutic warm water bath, brush out and fluff dry, ear cleaning and nail trim">
+                                    <input class="form-check-input" type="radio" name="groomChoice" id="basicGroom">
+                                    <label class="form-check-label" for="basicGroom">The Essentials
+                                    </label>
+                                </li>
+                                <li class="form-check" data-trigger="click" data-toggle="popover" title="Mini Spa" data-content="A touch up service, sanitary trip, feet scissoring and pad shaving, minor clipping - includes The Essentials package.">
+                                    <input class="form-check-input" type="radio" name="groomChoice" id="miniSpa">
+                                    <label class="form-check-label" for="miniSpa">Touch Ups Groom
+                                    </label>
+                                </li>
+                                <li class="form-check" data-trigger="click" data-toggle="popover" title="Deluxe Spa" data-content="Full body haircut includes The Essentials package.">
+                                    <input class="form-check-input" type="radio" name="groomChoice" id="deluxeGroom">
+                                    <label class="form-check-label" for="deluxeGroom">
+                                        Deluxe Groom
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#appointment">Request Appointment Day & Time <i class="far fa-clock"></i></a>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end front Groom Price Care -->
+                <div class="back">
+                    <div class="card cardId1" style="width: 18rem;">
+                        <img class="card-img-top" src="images/curlers1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Ons</h5>
+                            <ul>
+                                <li class="form-check" data-trigger="click" data-toggle="popover" title="Shed-Less Treatment" data-content="Special brushing system that dramatically reduces shedding.">
+                                    <input class="form-check-input" type="checkbox" name="groomChoice" value="$35" id="shed-Less">
+                                    <label class="form-check-label" for="shed-Less">Shed-Less Treatment
+                                    </label>
+                                </li>
+                                <li class="form-check" data-trigger="click" data-toggle="popover" title="Mud Wrap" data-content="Detoxifies and removes oily build-up.">
+                                    <input class="form-check-input" type="checkbox" name="groomChoice" id="mudWrap">
+                                    <label class="form-check-label" for="mudWrap">Mud Wrap
+                                    </label>
+                                </li>
+                                <li class="form-check" data-trigger="click" data-toggle="popover" title="Eucalyptus Steam Wrap" data-content="Medicated treatment soothes and relieves sinuses and increases circulation.">
+                                    <input class="form-check-input" type="checkbox" name="groomChoice" id="Eucalyptus">
+                                    <label class="form-check-label" for="Eucalyptus">
+                                        Eucalyptus Steam Wrap
+                                    </label>
+                                </li>
+                                <li class="form-check" data-trigger="click" data-toggle="popover" title="Flea Free" data-content="Medicated treatment specially designed by Puppy Transformers - guarantees a Flea Free existence for 6 months.">
+                                    <input class="form-check-input" type="checkbox" name="groomChoice" id="fleaFree">
+                                    <label class="form-check-label" for="fleaFree">
+                                        Flea Free
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr> <!-- note showing up mid way thru flipping cards -->
+    <!-- Social Icons -->
+    <ul class="list-inline py-2">
+        <li class="list-inline-item"><a class="p-2 fa-lg fb-ic"><i class="fa fa-facebook"></i></a></li>
+        <li class="list-inline-item"><a class="p-2 fa-lg tw-ic"><i class="fa fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a class="p-2 fa-lg gplus-ic"><i class="fa fa-google-plus"></i></a></li>
+        <li class="list-inline-item"><a class="p-2 fa-lg li-ic"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

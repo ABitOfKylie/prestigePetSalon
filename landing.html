@@ -34,7 +34,7 @@
                         <a class="dropdown-item" href="#makeOverCard">Make Overs</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#modalGallery">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="#accordionTeam">Our Team</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,6 +43,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#signup">Join Us</a>
                         <a class="dropdown-item" href="#">Find Us</a>
+                        <a class="dropdown-item" href="#quoteGroup">Testimonials</a>
                         <a class="dropdown-item" href="#appointment">Book Appointment</a>
                     </div>
                 </li>
@@ -102,7 +103,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Classic &amp; Traditional</h3>
                                 <p class="card-text">Our ultra contemporary grooming salon provides a premium, spa experience. Enhance your overall health and wellness with regular and personalized grooming utilizing our individually customized, high-quality services. We have several different grooming packages to choose from: "Essentials Only", "Essentials & Intimate Extras", and our "Head to Paw and back". VIP membership offers posh add-ons and an a la carte menu to help tailor the experience to your lifestyle. </p>
-                                <a href="" id="spaButton" role="button" class="round pink">Tempted?<span class="round">Indulge and luxuriate. Book Now!</span></a>
+                                <a href="#groomingCard" id="spaButton" role="button" class="round pink">Tempted?<span class="round">Indulge and luxuriate. Book Now!</span></a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +112,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Spa Specials</h3>
                                 <p class="card-text">Indulge yourself. We offer a variety of spa packages and a la carte services. Join our Spa VIP program and get pampered every month. Blueberry facials, mineral mud baths, pawdicures with moisturizing nail oil treatments, and Swedish, Sport and Aromatherapeutic Massages. </p>
-                                <a href="" id="spaButton" role="button" class="round pink">Tempted?<span class="round align-middle">Indulge and luxuriate. Book Now!</span></a>
+                                <a href="#spaSpecialties" id="spaButton" role="button" class="round pink">Tempted?<span class="round align-middle">Indulge and luxuriate. Book Now!</span></a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Wild &amp; Trending</h3>
                                 <p class="card-text">Having spent her life immersed in the world of art, fashion, and design, stylist Purple Haze has been able to label herself as "one the edgiest clothing stylists working today." Purple Haze's clients range from glam pop stars and socialites, to everyday fashionistas. Her fresh and unique eye allows her clientele to be ahead of the trend while remaining effortlessly chic.</p>
-                                <a href="" id="spaButton" role="button" class="round pink">Tempted?<span class="round">Indulge and luxuriate. Book Now!</span></a>
+                                <a href="#makeOverCard" id="spaButton" role="button" class="round pink">Tempted?<span class="round">Indulge and luxuriate. Book Now!</span></a>
                             </div>
                         </div>
                     </div>
@@ -128,8 +129,8 @@
             </div>
         </div>
     </section>
-    <!-- **** Carousel Section**** -->
-    <section>
+    <!-- **** Modal with Carousel Section**** -->
+    <section id="modalGallery">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -258,7 +259,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="buttonModal">Book Now</button>
             </div>
           </div> <!-- end modal content -->
         </div> <!-- end modal dialog -->
@@ -281,7 +282,6 @@
                   <li data-target="#carouselinModalSpa" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselinModalSpa" data-slide-to="1"></li>
                   <li data-target="#carouselinModalSpa" data-slide-to="2"></li>
-                  <li data-target="#carouselinModalSpa" data-slide-to="3"></li>
 
                 </ul>
               <!-- end of inside side indicators -->
@@ -338,8 +338,8 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="closeModal" data-dismiss="modal">Close</button>
+              <button type="button" class="buttonModal">Book Now</button>
             </div>
           </div> <!-- end modal content -->
         </div> <!-- end modal dialog -->
@@ -362,7 +362,6 @@
                   <li data-target="#carouselinModalWild" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselinModalWild" data-slide-to="1"></li>
                   <li data-target="#carouselinModalWild" data-slide-to="2"></li>
-                  <li data-target="#carouselinModalWild" data-slide-to="3"></li>
 
                 </ul>
               <!-- end of inside side indicators -->
@@ -383,26 +382,26 @@
                   <div class="carousel-item grouping grouping-cover">
                     <div class="row">
                       <div class="col">
-                            <img class="img-fluid" src="images/poodleIguana.jpg" alt=PoodleIguana>
+                            <img class="img-fluid" src="images/poodleCareBear.jpg" alt=poodleCareBear>
                       </div>
                       <div class="col">
-                            <img class="img-fluid" src="images/poodleSnail.jpg" alt=PoodleSnail>
+                            <img class="img-fluid" src="images/poodleFlower.jpg" alt=poodleFlower>
                       </div>
                       <div class="col">
-                            <img class="img-fluid" src="images/BlueZebra.jpg" alt=GroomedDog>
+                            <img class="img-fluid" src="images/BlueZebra.jpg" alt=blueZebraterrier>
                       </div>             
                     </div>
                   </div>
                   <div class="carousel-item grouping grouping-cover">
                   <div class="row">
                     <div class="col">
-                          <img class="img-fluid" src="images/adorablePinkTub.jpg" alt=BlueZebra>
+                          <img class="img-fluid" src="images/PoodleIguana.jpg" alt=poodleIguana>
                     </div>
                     <div class="col">
-                          <img class="img-fluid" src="images/pinkRobe.jpg" alt=BlueZebra>
+                          <img class="img-fluid" src="images/PoodleSnail.jpg" alt=poodleSnail>
                     </div>
                     <div class="col">
-                          <img class="img-fluid" src="images/lounge.jpg" alt=BlueZebra>
+                          <img class="img-fluid" src="images/poodleSquid.jpg" alt=poodleSquid>
                     </div>
                   </div>
                 </div> 
@@ -419,8 +418,8 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="closeModal" data-dismiss="modal">Close</button>
+              <button type="button" class="buttonModal">Book Now</button>
             </div>
           </div> <!-- end modal content -->
         </div> <!-- end modal dialog -->
@@ -568,7 +567,7 @@
           <div class="holdAll image-flip ontouchstart="this.classlist.toggle('hover');">
             <div class="main-flip flipcard v">
               <div class="frontSide">
-                <div class="card" id="grooming">
+                <div class="card" id="groomingCard">
                   <img class="card-img-top pricePic" src="images/colorGroomGlasses.jpg" alt="Card image cap">
                   <div class="card-body">
                       <h3 class="card-title">Grooming Packages</h3>
@@ -1126,6 +1125,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="index.js"></script>
-      <script src="path/to/bootstrap-confirmation.js"></script>
-    </body>
+<!--       <script src="path/to/bootstrap-confirmation.js"></script>
+ -->    
+   </body>
 </html>
